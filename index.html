@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f8e9c0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.webp">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/notification-styles.css">
+    <link rel="stylesheet" href="css/profilebar-style.css">
+    
+    <title>Kedai Kopi</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="element-1">
+            <div class="acount">
+                    <img src="img/pesonal.webp" alt="photo profil" loading="lazy" decoding="async">
+                    <div class="text-acount">
+                        <span>Ferdian Pratama</span>
+                        <p>Owner & Barista</p>
+                    </div>
+                    <ion-icon name="ellipsis-vertical" class="profile-btn"></ion-icon>
+            </div>
+        </div>
+        <div class="element-2">
+            <a href=""><img src="img/logo elcoff.webp" alt="logo" loading="lazy" decoding="async"></a>
+        </div>
+        <div class="element-3">
+            <ul>
+                <a class="float-down" href="#Home">Beranda</a>
+                <a class="float-down" href="#Vibes">Suasana</a>
+                <a class="float-down" href="#Menu">Menu</a>
+                <a class="float-down" href="#Location">Lokasi</a>
+                <button class="notification-btn">
+                    <ion-icon name="notifications-outline"></ion-icon>
+                    <span class="notification-badge">3</span>
+                </button>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Notification Panel -->
+    <div class="notification-panel">
+        <div class="notification-header">
+            <h3>Notifikasi</h3>
+            <button class="close-notification">
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+        </div>
+        <div class="notification-list">
+            <div class="notification-item unread">
+                <div class="notification-icon">
+                    <ion-icon name="cafe-outline"></ion-icon>
+                </div>
+                <div class="notification-content">
+                    <p class="notification-title">Blend Kopi Baru Tersedia</p>
+                    <p class="notification-text">Coba kopi Summer Blend terbaru kami dengan sentuhan jeruk dan cokelat.</p>
+                    <span class="notification-time">2 menit yang lalu</span>
+                </div>
+            </div>
+            <div class="notification-item">
+                <div class="notification-icon">
+                    <ion-icon name="pricetag-outline"></ion-icon>
+                </div>
+                <div class="notification-content">
+                    <p class="notification-title">Penawaran Spesial</p>
+                    <p class="notification-text">Dapatkan diskon 20% untuk semua minuman akhir pekan ini!</p>
+                    <span class="notification-time">1 jam yang lalu</span>
+                </div>
+            </div>
+            <div class="notification-item">
+                <div class="notification-icon">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                </div>
+                <div class="notification-content">
+                    <p class="notification-title">Pesanan Dikonfirmasi</p>
+                    <p class="notification-text">Pesanan Anda #12345 telah dikonfirmasi dan akan siap dalam 15 menit.</p>
+                    <span class="notification-time">3 jam yang lalu</span>
+                </div>
+            </div>
+        </div>
+        <div class="notification-footer">
+            <a href="#" class="view-all">Lihat semua notifikasi</a>
+        </div>
+    </div>
+
+    <!--Profile Bar-->
+    <div class="profile-panel">
+        <div class="profile-header">
+            <div class="account-profile">
+                <img src="img/pesonal.webp" alt="photo profil" loading="lazy" decoding="async">
+                    <div class="text-acount">
+                        <span>Ferdian Pratama</span>
+                        <p>Pemilik & Barista</p>
+                    </div>
+            </div>
+            <button class="close-profile">
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+        </div>
+        <div class="profile-list">
+            <div class="profile-items">
+                <ion-icon name="home-outline"></ion-icon>
+                <a href="#Home">Beranda</a>
+            </div>
+            <div class="profile-items">
+                <ion-icon name="balloon-outline"></ion-icon>
+                <a href="#Vibes">Suasana</a>
+            </div>
+            <div class="profile-items">
+                <ion-icon name="grid-outline"></ion-icon>
+                <a href="#Menu">Menu</a>
+            </div>
+            <div class="profile-items">
+                <ion-icon name="compass-outline"></ion-icon>
+                <a href="#Location">Lokasi</a>
+            </div>
+        </div>
+    </div>
+    
+    <!--Hero Section-->
+    <section class="hero-container" id="Home">
+        <img class="coffee-image-1 bounce" src="img/biji-kopi.webp" alt="coffee-image" loading="lazy" decoding="async">
+        <img class="coffee-image-2 bounce" src="img/biji-kopi.webp" alt="coffee-image" loading="lazy" decoding="async">
+        <img class="coffee-image-3 bounce" src="img/biji-kopi.webp" alt="coffee-image" loading="lazy" decoding="async">
+        <img class="coffee-image-4 bounce" src="img/biji-kopi.webp" alt="coffee-image" loading="lazy" decoding="async">
+        <div class="hero-section">
+            <h1>Segarkan Harimu Dengan Secangkir Kopi</h1>
+            <p>Nikmati setiap tegukan dan hidupkan hari Anda dengan kebahagiaan yang menyegarkan.</p>
+            <div class="hero-button">
+                <a href="#Menu"><button>Pesan Sekarang</button></a>
+            </div>
+            <img src="img/Coffee Image.webp" alt="Coffee" loading="lazy" decoding="async">
+        </div>
+    </section>
+    <!--Catalog-->
+    <section class="catalog-container">
+        <div class="catalog-section">
+            <div class="matcha-banner float">
+                <img src="img/matcha-banner.webp" alt="Iced Matcha Latte" loading="lazy" decoding="async">
+                <div>
+                    <h1>Matcha</h1>
+                    <p>Diskon 20% Minggu Ini!</p>
+                    <p>Mulai dari <span>Rp16.000</span></p>
+                    <a href="#Menu"><button class="banner-button float">Pesan Sekarang</button></a>
+                </div>
+            </div>
+            <div class="matchiato-banner float">
+                <img src="img/matchiato-banner.webp" alt="Iced Matcha Latte" loading="lazy" decoding="async">
+                <div>
+                    <h1>Matchiatto</h1>
+                    <p>Diskon 20% Minggu Ini!</p>
+                    <p>Mulai dari <span>Rp16.000</span></p>
+                    <a href="#Menu"><button class="banner-button float">Pesan Sekarang</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---Vibe Section-->
+    <section class="vibe-container" id="Vibes">
+        <div class="vibe-section">
+            <div class="vibe-text">
+                <h1>Temukan Suasana Tenang untuk Secangkir Kopi Anda</h1>
+                <div>
+                    <p>Rasakan suasana yang hangat dan nyaman di kedai kopi kami. Setiap sudut dirancang untuk menemani momen ngobrol, bekerja, atau sekadar menikmati kopi favorit Anda.</p>
+                    <button>Jelajahi Sekarang</button>
+                </div>
+            </div>
+            <img src="img/place.webp" alt="place">
+        </div>
+    </section>
+    <!--Product Section-->
+    <section class="product-container" id="Menu">
+        <div class="product-section">
+            <div class="product-search">
+                <form action="">
+                    <input type="text" placeholder="Cari Kopi Favoritmu">
+                </form>
+            </div>
+            <div class="product-list">
+                <div class="product-header">
+                    <h1>Produk</h1>
+                    <button class="banyak-produk">Produk Lainnya<ion-icon name="arrow-forward-outline"></ion-icon></button>
+                </div>
+                <div class="product">
+                    <!--ini nanti diisi dengan card product-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Modal -->
+    <section class="more-products">
+        <div class="more-products-items">
+            <div class="modal-header">
+                <h1>Menu Kami</h1>
+                <button class="close-more-product">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+            <div class="modal-content">
+                <div class="modals-type-bar">
+                    <div class="modal-search-bar">
+                        <div class="search-bar">
+                            <ion-icon name="search-outline"></ion-icon>
+                            <input type="text" id="modalSearchInput" placeholder="Cari Kopi Favoritmu">
+                        </div>
+                        <div class="search-bar-icon">
+                            <ion-icon name="cart-outline"></ion-icon>
+                            <span class="cart-badge">3</span>
+                        </div>
+                    </div>
+                    <div class="category-filters">
+                        <button class="category-btn active" data-category="all">Semua</button>
+                        <button class="category-btn" data-category="coffee">Kopi</button>
+                        <button class="category-btn" data-category="non-coffee">Non-Kopi</button>
+                        <button class="category-btn" data-category="dessert">Hidangan Penutup</button>
+                    </div>
+                </div>
+                <div class="products-grid more-menu">
+                    <!-- Product items will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Maps-->
+    <section class="maps" id="Location">
+        <div>
+            <iframe     
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.480090917404!2d105.26835917503912!3d-5.377310254314387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40dbae8bcbf0f3%3A0x7dfb2edb507f8261!2sSukarame%2C%20Bandar%20Lampung!5e0!3m2!1sid!2sid!4v1739836287510!5m2!1sid!2sid"
+                width="100%"
+                height="400"
+                style="border:0; border-radius:12px;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+    <footer class="footer-container">
+        <div class="footer-element">
+            <img src="img/logo elcoff.webp" alt="">
+            <div class="footer-list">
+                <a href="#Home" class="transDown"><ion-icon name="home-outline"></ion-icon> Beranda</a>
+                <a href="#Vibes" class="transDown"><ion-icon name="book-outline"></ion-icon> Suasana</a>
+                <a href="#Menu" class="transDown"><ion-icon name="cafe-outline"></ion-icon> Menu</a>
+                <a href="#Location" class="transDown"><ion-icon name="megaphone-outline"></ion-icon> Lokasi</a>
+            </div>
+            <div class="media-social">
+                <a href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://tiktok.com/"><ion-icon name="logo-tiktok"></ion-icon></a>
+            </div>
+        </div>
+        <hr>
+        <p class="licance">© elcoff | element coffee 2026</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
