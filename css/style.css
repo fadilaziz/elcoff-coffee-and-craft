@@ -306,6 +306,34 @@ nav {
     cursor: pointer;
 }
 /*Catalog Section*/
+/*Instagram Feed Section*/
+.instagram-feed {
+    padding: 50px 100px;
+    max-width: 2000px;
+    margin: auto;
+}
+
+.instagram-feed .instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.instagram-feed .instagram-grid > div {
+    width: 100%;
+    max-width: 540px;
+}
+
+.instagram-feed blockquote.instagram-media {
+    margin: 0 !important;
+    width: 100% !important;
+    min-width: 300px !important;
+    max-width: 540px !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+}
 /*Vibe Container*/
 .vibe-container {
     padding: 0px 100px;
@@ -987,6 +1015,18 @@ iframe {
         right: 20px;
     }
     /*Hero Catalog*/
+    /*Instagram Feed*/
+    .instagram-feed {
+        padding: 40px 100px;
+    }
+    .instagram-feed .instagram-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 15px;
+    }
+    .instagram-feed blockquote.instagram-media {
+        border-radius: 18px !important;
+    }
+    /*Instagram Feed*/
     /*Vibe Container*/
     .vibe-container {
         padding: 0px 100px;
@@ -1021,10 +1061,10 @@ iframe {
         margin-bottom: 10px;
     }
     .vibe-section p {
-        margin-top: 10px;
+        margin-top: 5px;
         color: gray;
         font-size: 20px;
-        width: 500px;
+        width: 400px;
     }
     .vibe-section img {
         width: 100%;
@@ -1407,6 +1447,18 @@ iframe {
         margin-top: 20px;
     }
     /*Catalog-Banner*/
+    /*Instagram Feed*/
+    .instagram-feed {
+        padding: 30px 50px;
+    }
+    .instagram-feed .instagram-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 15px;
+    }
+    .instagram-feed blockquote.instagram-media {
+        border-radius: 16px !important;
+    }
+    /*Instagram Feed*/
     /*Vibe Container*/
     .vibe-container {
         padding: 0px 20px;
@@ -1624,6 +1676,27 @@ iframe {
         margin-top: 20px;
         padding: 20px 10px 20px 10px;
     }
+    /*Instagram Feed*/
+    .instagram-feed {
+        padding: 20px 10px;
+    }
+    .instagram-feed .instagram-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .instagram-feed .instagram-grid > div {
+        max-width: 100%;
+    }
+    .instagram-feed blockquote.instagram-media {
+        border-radius: 12px !important;
+    }
+    .instagram-feed .mobile-hidden {
+        display: none !important;
+    }
+    .instagram-feed .mobile-visible {
+        display: block !important;
+    }
+    /*Instagram Feed*/
     .catalog-section {
         flex-direction: column;
         gap: 20px;
