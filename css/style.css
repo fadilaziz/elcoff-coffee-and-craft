@@ -325,7 +325,7 @@ nav {
     max-width: 540px;
 }
 
-.instagram-feed blockquote.instagram-media {
+.instagram-feed blockquote.instagram-media, .instagram-feed img {
     margin: 0 !important;
     width: 100% !important;
     min-width: 300px !important;
@@ -333,6 +333,14 @@ nav {
     border-radius: 20px !important;
     overflow: hidden !important;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+.instagram-feed img {
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+    width: 100% !important;
+    height: auto !important;
 }
 /*Vibe Container*/
 .vibe-container {
@@ -1026,6 +1034,9 @@ iframe {
     .instagram-feed blockquote.instagram-media {
         border-radius: 18px !important;
     }
+    .instagram-feed img {
+        border-radius: 18px !important;
+    }
     /*Instagram Feed*/
     /*Vibe Container*/
     .vibe-container {
@@ -1449,13 +1460,16 @@ iframe {
     /*Catalog-Banner*/
     /*Instagram Feed*/
     .instagram-feed {
-        padding: 30px 50px;
+        padding: 10px 10px;
     }
     .instagram-feed .instagram-grid {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 15px;
     }
     .instagram-feed blockquote.instagram-media {
+        border-radius: 16px !important;
+    }
+    .instagram-feed img {
         border-radius: 16px !important;
     }
     /*Instagram Feed*/
@@ -1675,19 +1689,6 @@ iframe {
     .catalog-container {
         margin-top: 20px;
         padding: 20px 10px 20px 10px;
-    }
-    /*Instagram Feed*/
-    .instagram-feed {
-        padding: 20px 10px;
-    }
-    .instagram-feed .instagram-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-    .instagram-feed .instagram-grid > div {
-        max-width: 100%;
-    }
-    .instagram-feed blockquote.instagram-media {
         border-radius: 12px !important;
     }
     .instagram-feed .mobile-hidden {
@@ -1695,6 +1696,24 @@ iframe {
     }
     .instagram-feed .mobile-visible {
         display: block !important;
+    }
+    /* Fix spacing for mobile */
+    .instagram-feed .instagram-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .instagram-feed .instagram-grid > div {
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+    .instagram-feed .instagram-grid > div img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
     }
     /*Instagram Feed*/
     .catalog-section {
